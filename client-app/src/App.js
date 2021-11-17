@@ -1,4 +1,5 @@
 import React from 'react';
+import AddUser from './components/AddUser';
 import Sidenav from './components/Sidenav';
 
 class App extends React.Component {
@@ -21,11 +22,14 @@ class App extends React.Component {
     console.log(page);
     return (
       <div className="relative min-h-screen flex">
-        <div className="bg-blue-800 text-blue-100 w-15 p-4 border-2 border-black">
+        <div className="bg-blue-800 text-blue-100 w-15 p-4">
         <Sidenav updtePage={this.updatePage}/>
         </div>
-        <div className="flex-1 flex justify-center p-20 border-2 border-black ">
-          {page}
+        <div className="flex-1 flex justify-center p-20">
+          {page === 'cadastrar'?
+          <AddUser />
+          :<p>listauser</p>
+          }
         </div>
       </div>
     );
