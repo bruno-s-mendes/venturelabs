@@ -1,5 +1,6 @@
 import React from 'react';
 import AddUser from './components/AddUser';
+import ClientList from './components/ClientList';
 import Sidenav from './components/Sidenav';
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
         <div className="flex-1 flex justify-center p-20">
           {page === 'cadastrar'?
           <AddUser />
-          :<p>listauser</p>
+          :<ClientList />
           }
         </div>
       </div>
