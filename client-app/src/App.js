@@ -20,7 +20,6 @@ class App extends React.Component {
 
   render() {
     const { page } = this.state;
-    console.log(page);
     return (
       <div className="relative min-h-screen flex">
         <div className="bg-blue-800 text-blue-100 w-15 p-4">

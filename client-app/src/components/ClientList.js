@@ -13,8 +13,8 @@ class ClientList extends React.Component {
     const { clients } = this.props;
     return (
       <ul className="w-full">
-        {/* {    cep, address1, address2, birthDate, cpf, income */}
-          {clients.map((client, index) => (
+        {
+          clients.map((client, index) => (
             <li
               key={index}
               className="bg-blue-200 text-blue-900 rounded-lg w-10/12 p-2 flex flex-col m-2"
@@ -23,24 +23,22 @@ class ClientList extends React.Component {
             <span
               hidden={true}
             >
-              <table className="flex">
-                <tbody>
-                  <tr className="">
-                    <td>{`email: ${client.email}`}</td>
-                    <td>{`CEP: ${client.cep}`}</td>
-                    <td>{`Data de Nascimento: ${client.birthDate}`}</td>
-                  </tr>
-                  <tr className="">
-                    <td>{`CPF: ${client.cpf}`}</td>
-                    <td>{`Address 1: ${client.address1}`}</td>
-                    <td>{`Salário mensal: ${client.income}`}</td>
-                  </tr>
-                  <tr className="">
-                    <td>{`Telefone: ${client.tel}`}</td>
-                    <td>{`Address 2: ${client.address2}`}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="flex justify-between">
+                <ul>
+                  <li>{`email: ${client.email}`}</li>
+                  <li>{`CPF: ${client.cpf}`}</li>
+                  <li>{`Telefone: ${client.tel}`}</li>
+                </ul>
+                <ul>
+                  <li>{`CEP: ${client.cep}`}</li>
+                  <li>{`Address 1: ${client.address1}`}</li>
+                  <li>{`Address 2: ${client.address2}`}</li>
+                </ul>
+                <ul>
+                  <li>{`Data de Nascimento: ${client.birthDate}`}</li>
+                  <li>{`Salário mensal: ${client.income}`}</li>
+                </ul>
+              </div>
             </span>
             </li>
           ))
