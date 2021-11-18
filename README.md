@@ -3,7 +3,7 @@ Projeto de desafio técnico para empresa VentureLabs
 
 Obejtivo de desenvolver uma aplicação React que crie usuários e liste os usuários criados.
 
-A aplicação pode ser acessada no link:
+A aplicação pode ser acessada no link: https://bruno-s-mendes.github.io/venturelabs/
 
 Para criar esta aplicação eu utilizei React, Redux e Tailwind.
 
