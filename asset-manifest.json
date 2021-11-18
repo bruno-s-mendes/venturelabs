@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/venturelabs/static/css/main.2f044a54.chunk.css",
+    "main.js": "/venturelabs/static/js/main.db99ed76.chunk.js",
+    "main.js.map": "/venturelabs/static/js/main.db99ed76.chunk.js.map",
+    "runtime-main.js": "/venturelabs/static/js/runtime-main.30f2e29e.js",
+    "runtime-main.js.map": "/venturelabs/static/js/runtime-main.30f2e29e.js.map",
+    "static/js/2.9a93d061.chunk.js": "/venturelabs/static/js/2.9a93d061.chunk.js",
+    "static/js/2.9a93d061.chunk.js.map": "/venturelabs/static/js/2.9a93d061.chunk.js.map",
+    "static/js/3.660a5851.chunk.js": "/venturelabs/static/js/3.660a5851.chunk.js",
+    "static/js/3.660a5851.chunk.js.map": "/venturelabs/static/js/3.660a5851.chunk.js.map",
+    "index.html": "/venturelabs/index.html",
+    "static/css/main.2f044a54.chunk.css.map": "/venturelabs/static/css/main.2f044a54.chunk.css.map",
+    "static/js/2.9a93d061.chunk.js.LICENSE.txt": "/venturelabs/static/js/2.9a93d061.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30f2e29e.js",
+    "static/js/2.9a93d061.chunk.js",
+    "static/css/main.2f044a54.chunk.css",
+    "static/js/main.db99ed76.chunk.js"
+  ]
+}
