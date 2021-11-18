@@ -72,7 +72,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="cep"
             >CEP</label>
-            <input 
+            <input
+              id="cep"
               type="text"
               name="cep"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -83,7 +84,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="address1"
             >Endereço 1</label>
-            <input 
+            <input
+              id="address1"
               type="text"
               name="address1"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -94,7 +96,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="address2"
             >Endereço 2</label>
-            <input 
+            <input
+              id="address2"
               type="text"
               name="address2"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -129,6 +132,7 @@ class AddUser extends React.Component {
               htmlFor="birthDate"
             >Data de Nascimento</label>
             <input 
+              id="birthDate"
               type="date"
               name="birthDate"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -139,7 +143,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="cpf"
             >CPF</label>
-            <input 
+            <input
+              id="cpf"
               type="text"
               name="cpf"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -150,7 +155,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="income"
             >Renda mensal</label>
-            <input 
+            <input
+              id="income"
               type="text"
               name="income"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -184,6 +190,7 @@ class AddUser extends React.Component {
               htmlFor="name"
             >Nome</label>
             <input 
+              id="name"
               type="text"
               name="name"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -194,7 +201,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="lName"
             >Sobrenome</label>
-            <input 
+            <input
+              id="lName"
               type="text"
               name="lName"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -205,7 +213,8 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="email"
             >E-mail</label>
-            <input 
+            <input
+              id="email"
               type="text"
               name="email"
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
@@ -216,10 +225,10 @@ class AddUser extends React.Component {
               className="text-blue-600"
               htmlFor="tel"
             >Telefone</label>
-            <input 
+            <input
+              id="tel"
               type="text"
               name="tel"
-              placeholder="(  )     -    "
               className="bg-blue-100 border-2 border-blue-600 text-blue-600 rounded-lg p-1"
               value={ tel }
               onChange={ event => this.updatestate(event)}

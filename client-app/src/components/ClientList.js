@@ -5,8 +5,10 @@ import PropTypes from 'prop-types';
 class ClientList extends React.Component {
 
   handleClick(event) {
-    const isHidden = event.target.children[0].hidden
-    event.target.children[0].hidden = !isHidden
+    if (event.target.children[0] !== undefined && event.target.value === 0) {
+      const isHidden = event.target.children[0].hidden
+      event.target.children[0].hidden = !isHidden
+    }
   }
 
   render() {
@@ -19,6 +21,7 @@ class ClientList extends React.Component {
               key={index}
               className="bg-blue-200 text-blue-900 rounded-lg w-10/12 p-2 flex flex-col m-2"
               onClick={ event => this.handleClick(event)}
+              value="header"
               >{`${client.name} ${client.lName}`}
             <span
               hidden={true}
